@@ -1,0 +1,6 @@
+/tmp/
+/files
+/*.log
+/*.substvars
+/libdlib19/
+/*debhelper*

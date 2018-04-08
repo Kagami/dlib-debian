@@ -16,14 +16,35 @@ include /usr/share/dpkg/default.mk
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-# main packaging script based on dh7 syntax
+CFLAGS = -Wall -O3 -DNDEBUG -march=native
+CXXFLAGS = $(CFLAGS)
+DESTDIR = $(CURDIR)/debian/tmp
+
 %:
-	dh $@ --buildsystem=cmake --sourcedirectory=dlib
+	dh $@ --buildsystem=cmake --sourcedirectory=dlib --parallel
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-	-DDLIB_NO_GUI_SUPPORT=ON
+		-DBUILD_SHARED_LIBS=ON \
+		-DDLIB_JPEG_SUPPORT=OFF \
+		-DDLIB_LINK_WITH_SQLITE3=OFF \
+		-DDLIB_USE_CUDA=OFF \
+		-DDLIB_PNG_SUPPORT=OFF \
+		-DDLIB_GIF_SUPPORT=OFF \
+		-DDLIB_NO_GUI_SUPPORT=ON \
+		-DUSE_AVX_INSTRUCTIONS=ON
 
 override_dh_auto_install:
-	dh_auto_install
-	find $(CURDIR)/debian/tmp/usr/include/dlib -type d -empty -delete
+	dh_auto_install --destdir="$(DESTDIR)"
+	mkdir -p "$(DESTDIR)/opt/intel/mkl/lib/intel64"
+	mkdir -p "$(DESTDIR)/opt/intel/compiler/lib/intel64"
+	cp /opt/intel/mkl/lib/intel64/*.so "$(DESTDIR)/opt/intel/mkl/lib/intel64"
+	cp /opt/intel/lib/intel64/*.so "$(DESTDIR)/opt/intel/compiler/lib/intel64"
+
+override_dh_strip:
+
+override_dh_shlibdeps:
+	dh_shlibdeps -Xlibmkl -Xlibiomp
+
+override_dh_builddeb:
+	dh_builddeb -- -z0

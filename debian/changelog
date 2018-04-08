@@ -1,3 +1,9 @@
+dlib (19.10-1) unstable; urgency=low
+
+  * New version.
+
+ -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 07 Apr 2018 17:35:56 +0300
+
 dlib (18.18-2) unstable; urgency=medium
 
   * Add the static library to the dev package. Closes: #836676.
