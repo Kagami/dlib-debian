@@ -5,8 +5,8 @@ Build-Depends: debhelper (>= 9), bzip2, cmake
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://dlib.net/
-Vcs-Git: https://github.com/severin-lemaignan/dlib-debian.git
-Vcs-Browser: https://github.com/severin-lemaignan/dlib-debian
+Vcs-Git: https://github.com/Kagami/dlib-debian.git
+Vcs-Browser: https://github.com/Kagami/dlib-debian
 
 Package: libdlib19
 Architecture: any
