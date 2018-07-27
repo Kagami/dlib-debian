@@ -1,0 +1,27 @@
+Source: libmkl
+Priority: optional
+Maintainer: Kagami Hiiragi <kagami@genshiken.org>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.7
+Section: non-free/science
+Homepage: https://software.intel.com/en-us/mkl
+Vcs-Git: https://github.com/Kagami/dlib-debian.git
+Vcs-Browser: https://github.com/Kagami/dlib-debian
+
+Package: libmkl-dev
+Section: non-free/libdevel
+Architecture: amd64
+Depends: libmkl1 (= ${binary:Version}), ${misc:Depends}
+Description: Intel(R) Math Kernel Library (development files)
+ Intel(R) Math Kernel Library (Intel(R) MKL) is a computing math library
+ of highly optimized, extensively threaded routines for applications
+ that require maximum performance.
+
+Package: libmkl1
+Section: non-free/libs
+Architecture: amd64
+Depends: ${misc:Depends}
+Description: Intel(R) Math Kernel Library (shared libraries)
+ Intel(R) Math Kernel Library (Intel(R) MKL) is a computing math library
+ of highly optimized, extensively threaded routines for applications
+ that require maximum performance.

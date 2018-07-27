@@ -1,0 +1,2 @@
+opt/intel/compilers_and_libraries_*/linux/mkl/include/*.h
+opt/intel/compilers_and_libraries_*/linux/mkl/include/**/*.h

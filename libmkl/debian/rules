@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+DESTDIR = $(CURDIR)/debian/tmp
+
+%:
+	dh $@ 
+
+override_dh_auto_install:
+	mkdir -p "$(DESTDIR)"
+	cp -a opt "$(DESTDIR)"
+	ln -s compilers_and_libraries_2018.3.222/linux/mkl "$(DESTDIR)/opt/intel/mkl"
+	ln -s compilers_and_libraries_2018.3.222/linux/compiler/lib "$(DESTDIR)/opt/intel/lib"
+	mkdir -p "$(DESTDIR)/etc/ld.so.conf.d"
+	echo "/opt/intel/mkl/lib/intel64" >> "$(DESTDIR)/etc/ld.so.conf.d/mkl.conf"
+	echo "/opt/intel/lib/intel64" >> "$(DESTDIR)/etc/ld.so.conf.d/mkl.conf"
+
+override_dh_strip:
+
+override_dh_shlibdeps:
+
+override_dh_builddeb:
+	dh_builddeb -- -z0
