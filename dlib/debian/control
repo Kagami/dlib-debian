@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/Kagami/dlib-debian
 Package: libdlib-dev
 Section: libdevel
 Architecture: amd64
-Depends: libdlib19 (= ${binary:Version}), ${misc:Depends}
+Depends: libdlib19 (= ${binary:Version}), libmkl-dev, ${misc:Depends}
 Description: C++ toolkit for machine learning and computer vision - development
  Dlib is a general purpose cross-platform open source software library written
  in the C++ programming language. It now contains software components for
