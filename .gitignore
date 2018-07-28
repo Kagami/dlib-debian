@@ -11,8 +11,12 @@ debhelper-build-stamp
 */debian/tmp/
 */debian/files
 
+/libmkl/*
+!/libmkl/debian/
 /libmkl/debian/libmkl1/
 /libmkl/debian/libmkl-dev/
-/libmkl/opt/
 
+/dlib/*
+!/dlib/debian/
 /dlib/debian/libdlib19/
+/dlib/debian/libdlib-dev/

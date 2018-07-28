@@ -1,4 +1,10 @@
-dlib (19.15-1) unstable; urgency=low
+dlib (19.15-2) xenial; urgency=low
+
+  * Force amd64 architecture because we provide only 64-bit MKL.
+
+ -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 12:29:44 +0300
+
+dlib (19.15-1) xenial; urgency=low
 
   * New version.
 

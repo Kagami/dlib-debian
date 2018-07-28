@@ -3,7 +3,7 @@
 DESTDIR = $(CURDIR)/debian/tmp
 
 %:
-	dh $@ 
+	dh $@
 
 override_dh_auto_install:
 	mkdir -p "$(DESTDIR)"

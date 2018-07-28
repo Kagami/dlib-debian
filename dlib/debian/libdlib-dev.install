@@ -1,0 +1,4 @@
+usr/include/dlib/*.h
+usr/include/dlib/*/*.h
+usr/lib/*/*.so
+usr/lib/*/pkgconfig/*
