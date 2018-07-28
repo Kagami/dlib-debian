@@ -1,3 +1,9 @@
+dlib (19.15-3) xenial; urgency=low
+
+  * Fix libdlib-dev install headers.
+
+ -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 13:57:09 +0300
+
 dlib (19.15-2) xenial; urgency=low
 
   * Force amd64 architecture because we provide only 64-bit MKL.

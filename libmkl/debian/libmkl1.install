@@ -4,4 +4,4 @@ debian/tmp/opt/intel/compilers_and_libraries_*/linux/compiler/lib/intel64_lin/*.
 debian/tmp/opt/intel/compilers_and_libraries_*/linux/compiler/lib/intel64
 opt/intel/mkl
 opt/intel/lib
-etc/ld.so.conf.d/*
+etc/ld.so.conf.d

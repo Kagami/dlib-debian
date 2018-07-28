@@ -10,6 +10,7 @@
 debhelper-build-stamp
 */debian/tmp/
 */debian/files
+*/debian/.debhelper/
 
 /libmkl/*
 !/libmkl/debian/
