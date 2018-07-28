@@ -1,3 +1,9 @@
+dlib (19.15-4) xenial; urgency=low
+
+  * Add MKL paths to pkgconfig.
+
+ -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 15:26:13 +0300
+
 dlib (19.15-3) xenial; urgency=low
 
   * Fix libdlib-dev install headers.

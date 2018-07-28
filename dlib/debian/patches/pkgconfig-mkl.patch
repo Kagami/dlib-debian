@@ -1,0 +1,12 @@
+Add MKL paths to pkgconfig
+--- a/dlib/cmake_utils/dlib.pc.in
++++ b/dlib/cmake_utils/dlib.pc.in
+@@ -4,6 +4,6 @@
+ Name: @PROJECT_NAME@
+ Description: Numerical and networking C++ library
+ Version: @VERSION@
+-Libs: -L${libdir} -ldlib
+-Cflags: -I${includedir}
++Libs: -L${libdir} -ldlib -L/opt/intel/mkl/lib/intel64 -lmkl_rt
++Cflags: -I${includedir} -I/opt/intel/mkl/include
+ Requires:@REQUIRES_LIBS@
