@@ -1,4 +1,4 @@
-dlib (19.15-5) xenial; urgency=low
+dlib (19.15-0~xenial5) xenial; urgency=low
 
   * libdlib-dev depends on libmkl-dev.
 
