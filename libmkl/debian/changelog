@@ -1,5 +1,11 @@
 libmkl (2018.3.222-0~xenial2) xenial; urgency=low
 
+  * Fix version pattern.
+
+ -- Kagami Hiiragi <kagami@genshiken.org>  Mon, 30 Jul 2018 03:54:08 +0300
+
+libmkl (2018.3.222-0~xenial1) xenial; urgency=low
+
   * Initial release
 
  -- Kagami Hiiragi <kagami@genshiken.org>  Fri, 27 Jul 2018 17:42:13 +0300

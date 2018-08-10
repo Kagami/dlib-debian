@@ -4,25 +4,25 @@ dlib (19.15-0~xenial5) xenial; urgency=low
 
  -- Kagami Hiiragi <kagami@genshiken.org>  Sun, 29 Jul 2018 00:51:37 +0300
 
-dlib (19.15-4) xenial; urgency=low
+dlib (19.15-0~xenial4) xenial; urgency=low
 
   * Add MKL paths to pkgconfig.
 
  -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 15:26:13 +0300
 
-dlib (19.15-3) xenial; urgency=low
+dlib (19.15-0~xenial3) xenial; urgency=low
 
   * Fix libdlib-dev install headers.
 
  -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 13:57:09 +0300
 
-dlib (19.15-2) xenial; urgency=low
+dlib (19.15-0~xenial2) xenial; urgency=low
 
   * Force amd64 architecture because we provide only 64-bit MKL.
 
  -- Kagami Hiiragi <kagami@genshiken.org>  Sat, 28 Jul 2018 12:29:44 +0300
 
-dlib (19.15-1) xenial; urgency=low
+dlib (19.15-0~xenial1) xenial; urgency=low
 
   * New version.
 
